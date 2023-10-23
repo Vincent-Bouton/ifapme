@@ -78,6 +78,14 @@ p {
 	z-index: 100;
 }
 
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
 .header__logo {
 	display: flex;
 	align-items: center;
@@ -145,6 +153,30 @@ p {
 	border-bottom: var(--white) 1px solid;
 }
 
+@media (min-width: 1024px) {
+	.header__nav-menu-burger {
+		display: none;
+	}
+	.header__nav-links {
+		position: inherit;
+		width: inherit;
+		height: inherit;
+		transform: inherit;
+		background-color: transparent;
+		transition: none;
+	}
+	.header__nav-links-list {
+		display: flex;
+	}
+	.header__nav-links-list-item {
+		margin: 10px 0;
+		font-size: 1.125rem;
+	}
+	.header__nav-links-cross {
+		display: none;
+	}
+}
+
 /* ----------------------------- Hero ----------------------------- */
 
 .hero {
@@ -159,6 +191,8 @@ p {
 	padding: 16px;
 	display: grid;
 	position: relative;
+	max-width: 80rem;
+	margin: 0 auto;
 }
 .hero__container > div {
 	display: flex;
@@ -179,8 +213,8 @@ p {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: -23vh;
-	height: 25vh;
+	bottom: -39vh;
+	height: 40vh;
 	width: 5px;
 	background: var(--purple);
 	background: -webkit-linear-gradient(
@@ -243,11 +277,18 @@ p {
 	animation: up-and-down 2s infinite;
 }
 
+@media (min-width: 1024px) {
+	.hero__container > div {
+		justify-content: left;
+	}
+}
+
 /* ----------------------------- Overview (About) ----------------------------- */
 
 .about {
-	margin-top: 75px;
 	padding: 0 20px;
+	max-width: 80rem;
+	margin: 75px auto 0;
 }
 
 .about__title {
@@ -259,6 +300,7 @@ p {
 	line-height: 1.75rem;
 	font-size: 17px;
 	font-weight: 400;
+	max-width: 48rem;
 }
 
 .about__cards {
@@ -289,10 +331,13 @@ p {
 .about__cards-item img {
 	width: 80px;
 }
+
 /* ----------------------------- Experience ----------------------------- */
+
 .experience {
-	margin-top: 75px;
 	padding: 0 20px;
+	max-width: 80rem;
+	margin: 75px auto 0;
 }
 
 .experience__title {
@@ -401,11 +446,49 @@ p {
 	width: 7rem;
 }
 
+@media (min-width: 1024px) {
+	.experience__title {
+		margin-bottom: 40px;
+	}
+	.experience__timeline {
+		grid-template-columns: 1fr 30px 1fr;
+		max-width: 68rem;
+		margin: 0 auto;
+	}
+	.experience__timeline-bar {
+		grid-column: 2;
+	}
+	.card-ifapme {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.card-ifapme .experience__timeline-card-image,
+	.card-becode .experience__timeline-card-image {
+		left: inherit;
+		right: -60px;
+	}
+
+	.card-ifapme::before,
+	.card-becode::before {
+		left: inherit;
+		right: -4px;
+	}
+	.card-sthetique {
+		grid-column: 3;
+		grid-row: 2;
+	}
+	.card-becode {
+		grid-column: 1;
+		grid-row: 3;
+	}
+}
+
 /* ----------------------------- Work ----------------------------- */
 
 .work {
-	margin-top: 75px;
 	padding: 0 20px;
+	max-width: 80rem;
+	margin: 75px auto 0;
 }
 
 .work__title {
@@ -518,6 +601,12 @@ p {
 }
 .javascript {
 	background: linear-gradient(to top, #e2c430 30%, #f7d724);
+}
+
+@media (min-width: 1024px) {
+	.work__cards {
+		justify-content: left;
+	}
 }
 
 /* ----------------------------- Contact ----------------------------- */
