@@ -4,24 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Bouton Vincent</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header>
-			<div>
-				<img src="./images/logo-white.svg" alt="Logo Vincent Bouton" />
-				<p>Vincent <span>Bouton</span></p>
+		<header class="header">
+			<div class="header__logo">
+				<a href="./">
+					<img
+						src="./images/logo-white.png"
+						alt="Logo Vincent Bouton"
+						class="header__logo-image"
+						width="64px"
+						height="64px"
+					/>
+				</a>
+				<p class="header__logo-text">
+					Vincent <span class="header__logo-text--hidden">Bouton</span>
+				</p>
 			</div>
-			<nav>
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+			<nav class="header__nav">
+				<div class="header__nav-menu">
+					<a href="#burger" class="header__nav-menu-burger">
+						<img src="./images/menu.svg" alt="burger menu icon" />
+					</a>
+				</div>
+				<div id="burger" class="header__nav-links">
+					<span class="header__nav-links-cross">
+						<a href="#">
+							<img
+								src="./images/close.svg"
+								alt="Close menu icon"
+								width="40px"
+								height="40px"
+							/>
+						</a>
+					</span>
+					<ul class="header__nav-links-list">
+						<li class="header__nav-links-list-item">
+							<a href="#about">About</a>
+						</li>
+						<li class="header__nav-links-list-item">
+							<a href="#work">Work</a>
+						</li>
+						<li class="header__nav-links-list-item">
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 		<main>
-			<h1>Hi, I'm <span>Vincent</span></h1>
-			<p>
+			<h1 class="hero__title">Hi, I'm <span>Vincent</span></h1>
+			<p class="hero__text">
 				I develop 3D visuals, User &nbsp;
 				<span>interface, and Web application</span>
 			</p>
