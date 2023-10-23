@@ -45,6 +45,9 @@
 							<a href="#about">About</a>
 						</li>
 						<li class="header__nav-links-list-item">
+							<a href="#experience">Experience</a>
+						</li>
+						<li class="header__nav-links-list-item">
 							<a href="#work">Work</a>
 						</li>
 						<li class="header__nav-links-list-item">
@@ -118,72 +121,104 @@
 					</li>
 				</ul>
 			</section>
-			<section>
-				<p>What I have done so far</p>
-				<h2>Work Experience.</h2>
-				<article>
-					<img src="./images/company/ifapme.png" alt="Logo IFAPME" />
+			<span id="experience"></span>
+			<section class="experience">
+				<p class="experience__intro">What I have done so far</p>
+				<h2 class="experience__title">Work Experience.</h2>
+				<div class="experience__timeline">
+					<span class="experience__timeline-bar"></span>
+					<div class="experience__timeline-card">
+						<article>
+							<div class="experience__timeline-card-image ifapme">
+								<img src="./images/company/ifapme.png" alt="Logo IFAPME" />
+							</div>
 
-					<h3>Front-end Web Developer</h3>
-					<p>IFAPME</p>
-					<ul>
-						<li>This is a new journey for me now</li>
-						<li>
-							I'll be learning once again the world of web development, this
-							will be specific to the front-end web development
-						</li>
-						<li>This bootcamp will be for 2 Years</li>
-						<li>
-							I have the opportunity to work as an intern for the entirety of
-							the bootcamp and actively looking for it
-						</li>
-					</ul>
-				</article>
-				<article>
-					<img src="./images/company/sthetique.png" alt="Logo IFAPME" />
-					<h3>Next JS Developer & Designer</h3>
-					<p>S'thétique Sophie</p>
-					<ul>
-						<li>
-							Discussing with the client about the company, we are able to
-							create a product that will help the client achieve their goals
-						</li>
-						<li>
-							Designing the product with the client, we are able to create a
-							product that will help the client
-						</li>
-						<li>
-							Implementing responsive design and ensuring cross-browser
-							compatibility.
-						</li>
-						<li>Update the website with feedback from the company.</li>
-					</ul>
-				</article>
-				<article>
-					<img src="./images/company/becodelogo.png" alt="Logo IFAPME" />
+							<h3 class="experience__timeline-card-title">
+								Front-end Web Developer
+							</h3>
+							<p class="experience__timeline-card-text">IFAPME</p>
+							<ul class="experience__timeline-card-list">
+								<li>This is a new journey for me now</li>
+								<li>
+									I'll be learning once again the world of web development, this
+									will be specific to the front-end web development
+								</li>
+								<li>This bootcamp will be for 2 Years</li>
+								<li>
+									I have the opportunity to work as an intern for the entirety
+									of the bootcamp and actively looking for it
+								</li>
+							</ul>
+							<p class="experience__timeline-card-date">Sep 2023 - Present</p>
+						</article>
+					</div>
+					<div class="experience__timeline-card">
+						<article>
+							<div class="experience__timeline-card-image sthetique">
+								<img
+									src="./images/company/sthetique.png"
+									alt="Logo Sthétique"
+								/>
+							</div>
+							<h3 class="experience__timeline-card-title">
+								Next JS Developer & Designer
+							</h3>
+							<p class="experience__timeline-card-text">S'thétique Sophie</p>
+							<ul class="experience__timeline-card-list">
+								<li>
+									Discussing with the client about the company, I was able to
+									create a product that helped the client achieve their goals.
+								</li>
+								<li>
+									Designing the product with the client, I was able to create a
+									product that helped the client
+								</li>
+								<li>
+									Implementing responsive design and ensuring cross-browser
+									compatibility.
+								</li>
+								<li>Update the website with feedback from the company.</li>
+							</ul>
+							<p class="experience__timeline-card-date">
+								April 2021 - July 2021
+							</p>
+						</article>
+					</div>
+					<div class="experience__timeline-card">
+						<article>
+							<div class="experience__timeline-card-image becode">
+								<img src="./images/company/becodelogo.png" alt="Logo Becode" />
+							</div>
 
-					<h3>Junior Web Developer</h3>
-					<p>BeCode</p>
-					<ul>
-						<li>
-							This was my first bootcamp, it was a 6 month experience, and I
-							learn the basics of web development.
-						</li>
-						<li>
-							From markdown to React and PHP, this journey make me understand
-							how to build a website using all kinds technologies.
-						</li>
-						<li>
-							I had to collaborate with other developers to learn and develop
-							product as a group.
-						</li>
-						<li>
-							Participating in code reviews and providing constructive feedback
-							to other developers.
-						</li>
-					</ul>
-				</article>
-				<div>
+							<h3 class="experience__timeline-card-title">
+								Junior Web Developer
+							</h3>
+							<p class="experience__timeline-card-text">BeCode</p>
+							<ul class="experience__timeline-card-list">
+								<li>
+									This was my first bootcamp, it was a 6 month experience, and I
+									learned the basics of web development.
+								</li>
+								<li>
+									From markdown to React and PHP, this journey made me
+									understand how to build a website using all kinds
+									technologies.
+								</li>
+								<li>
+									I had to collaborate with other developers to learn and
+									develop product as a group.
+								</li>
+								<li>
+									Participating in code reviews and providing constructive
+									feedback to other developers.
+								</li>
+							</ul>
+							<p class="experience__timeline-card-date">Sep 2019 - June 2020</p>
+						</article>
+					</div>
+				</div>
+
+				<div class="experience__tech">
 					<img src="./images/tech/html.png" alt="HTML Logo" />
 					<img src="./images/tech/css.png" alt="CSS logo" />
 					<img src="./images/tech/javascript.png" alt="Javascript Logo" />
@@ -269,15 +304,15 @@
 			<section>
 				<p>Get in Touch</p>
 				<h2>Contact.</h2>
-				<a href="mailto:vincent.bouton.dev@gmail.com"
-					>vincent.bouton.dev@gmail.com</a
-				>
+				<a href="mailto:vincent.bouton.dev@gmail.com">
+					vincent.bouton.dev@gmail.com
+				</a>
 			</section>
 			<footer>
 				<h3>Vincent Bouton</h3>
 				<p>
 					Site reconstruit a partir de
-					<a href="https://vbdevpro.com">Mon site Portfolio</a> en HTML et CSS
+					<a href="https://vbdevpro.com">Mon site Portfolio</a>, en HTML et CSS
 					uniquement dans le cadre de ma formation a l'IFAPME &copy;
 				</p>
 			</footer>

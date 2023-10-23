@@ -185,8 +185,6 @@ p {
 		rgba(60, 51, 80, 0) 100%
 	);
 }
-.hero__container-text {
-}
 
 .hero__title span {
 	color: var(--purple);
@@ -204,6 +202,7 @@ p {
 .hero__image {
 	width: 90%;
 	margin: 0 auto;
+	max-width: 480px;
 }
 @keyframes up-and-down {
 	0% {
@@ -268,6 +267,7 @@ p {
 .about__cards-item {
 	background: linear-gradient(-90deg, #00cea8 1.9%, #bf61ff 97.5%);
 	width: 100%;
+	max-width: 360px;
 	text-align: center;
 	font-size: 1.25rem;
 	font-weight: bold;
@@ -284,6 +284,117 @@ p {
 
 .about__cards-item img {
 	width: 80px;
+}
+/* ----------------------------- Experience ----------------------------- */
+.experience {
+	margin-top: 75px;
+	padding: 0 20px;
+}
+
+.experience__title {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.experience__timeline {
+	display: grid;
+	grid-template-columns: 30px 11fr;
+	grid-template-rows: repeat(3fr);
+	gap: 20px;
+	position: relative;
+	justify-content: left;
+}
+
+.experience__timeline-bar {
+	grid-column: 1;
+	grid-row: 1/4;
+	height: 100%;
+	width: 4px;
+	background-color: var(--white);
+	border-radius: 5px;
+	margin: auto;
+}
+
+.experience__timeline-card-image {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	left: -60px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	border: var(--white) solid 4px;
+}
+.ifapme {
+	background-color: var(--white);
+}
+
+.sthetique {
+	background-color: #e7e1d5;
+}
+
+.becode {
+	background-color: #194747;
+}
+
+.experience__timeline-card-image img {
+	width: 80%;
+	height: auto;
+	object-fit: contain;
+}
+
+.experience__timeline-card {
+	padding-bottom: 2px;
+	background-color: var(--white);
+	border-radius: 6px;
+	position: relative;
+	z-index: 2;
+}
+
+.experience__timeline-card::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	transform: rotate(45deg);
+	position: absolute;
+	left: -4px;
+	top: 32px;
+	background-color: #232531;
+	z-index: -1;
+}
+
+.experience__timeline-card article {
+	grid-column: 2;
+	background-color: var(--cards);
+	padding: 1rem;
+	border-radius: 5px;
+}
+
+.experience__timeline-card-title {
+	font-size: 1.5rem;
+}
+
+.experience__timeline-card-list {
+	margin: 1rem;
+	list-style-type: disc;
+}
+
+.experience__timeline-card-list li {
+	margin: 1rem 0;
+	line-height: 1.25rem;
+}
+
+.experience__tech {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
+	width: 80%;
+	justify-content: center;
+	margin: 32px auto;
+}
+
+.experience__tech img {
+	width: 7rem;
 }
 
 /* ----------------------------- Work ----------------------------- */
