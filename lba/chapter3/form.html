@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+	<body>
+		<form action="form.html">
+			<fieldset>
+				<legend>Informations Personnelles</legend>
+				<label for="lastname">Nom</label>
+				<br />
+				<input
+					type="text"
+					id="lastname"
+					name="lastname"
+					placeholder="Dujardin"
+				/>
+				<br />
+				<br />
+				<label for="firstname">Prénom</label>
+				<br />
+
+				<input type="text" id="firstname" name="lastname" placeholder="Jean" />
+				<br />
+				<br />
+				<label for="birthday">Date de naissance</label>
+				<br />
+
+				<input type="date" id="birthday" name="birthday" />
+				<br />
+				<br />
+				<label for="gender">Genre</label>
+				<br />
+				<input type="radio" name="gender" id="men" value="Homme" />
+
+				<label for="men">Homme</label>
+				<br />
+				<input type="radio" name="gender" id="woman" value="Femme" />
+
+				<label for="woman">Femme</label>
+				<br />
+				<input type="radio" name="gender" id="non-binary" value="Non-binaire" />
+				<label for="non-binary">Non-binaire</label>
+				<br />
+			</fieldset>
+			<fieldset>
+				<legend>Coordonnées</legend>
+				<label for="email">Adresse Email</label>
+				<br />
+				<input type="email" name="email" id="email" />
+				<br />
+				<br />
+				<label for="password">Mot de passe (au moins 7 caractères)</label>
+				<br />
+				<input type="password" name="password" minlength="7" id="password" />
+				<br />
+				<label for="confirmPassword">Confirmation Mot de passe</label>
+				<br />
+				<input
+					type="password"
+					name="confirmPassword"
+					minlength="7"
+					id="confirmPassword"
+				/>
+				<br />
+				<label for="country">Pays</label>
+				<br />
+				<select name="country" id="country">
+					<option value="Luxembourg">Luxembourg</option>
+					<option value="Belgique">Belgique</option>
+					<option value="France">France</option>
+					<option value="Allemagne">Allemagne</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Information Additionnelles</legend>
+				<label for="checkboxes">Checkbox</label>
+				<br />
+				<input type="checkbox" name="checkbox1" />
+				<label for="checkbox1" id="checkbox1">checkbox 1</label>
+				<br />
+				<input type="checkbox" name="checkbox2" />
+				<label for="checkbox2" id="checkbox2">checkbox 2</label>
+				<br />
+				<input type="checkbox" name="checkbox3" />
+				<label for="checkbox3" id="checkbox3">checkbox 3</label>
+				<br />
+				<input type="checkbox" name="checkbox4" />
+				<label for="checkbox4" id="checkbox4">checkbox 4</label>
+				<br />
+				<input type="checkbox" name="checkbox5" />
+				<label for="checkbox5" id="checkbox5">checkbox 5</label>
+				<br />
+				<br />
+				<label for="description">Description</label>
+				<br />
+				<textarea
+					name="description"
+					cols="50"
+					rows="10"
+					id="description"
+				></textarea>
+			</fieldset>
+			<br />
+			<input type="submit" value="S'inscrire" />
+		</form>
+	</body>
+</html>

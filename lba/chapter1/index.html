@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			th {
+				height: 100px;
+			}
+			td {
+				height: 100px;
+				width: 100px;
+				border: 1px solid black;
+				background-color: white;
+			}
+			tr:first-child td {
+				background-color: aqua;
+				border-radius: 10px 10px 0 0;
+				border: 1px solid black;
+			}
+			tr:last-child td {
+				background-color: aqua;
+				border-radius: 0px 0px 10px 10px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<table style="background-color: gray; padding: 10px">
+			<tr>
+				<td colspan="8"></td>
+			</tr>
+			<tr>
+				<td colspan="2"></td>
+				<td colspan="4" style="background-color: magenta"></td>
+				<td colspan="2"></td>
+			</tr>
+			<tr>
+				<td rowspan="2" style="background-color: magenta"></td>
+				<td></td>
+				<td></td>
+				<td
+					colspan="2"
+					rowspan="2"
+					style="border-radius: 100%; background-color: cadetblue"
+				></td>
+				<td></td>
+				<td></td>
+				<td rowspan="2" style="background-color: magenta"></td>
+			</tr>
+			<tr>
+				<td rowspan="2" style="background-color: magenta"></td>
+				<td></td>
+				<td></td>
+				<td rowspan="2" style="background-color: magenta"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="8"></td>
+			</tr>
+		</table>
+	</body>
+</html>
