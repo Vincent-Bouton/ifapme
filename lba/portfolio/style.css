@@ -44,8 +44,9 @@ h3 {
 
 p {
 	color: var(--text-color-primary);
-	line-height: 30px;
+	line-height: 1.875rem;
 	font-size: 0.875rem;
+	font-weight: 500;
 }
 
 @media (min-width: 1024px) {
@@ -144,7 +145,7 @@ p {
 
 .hero {
 	background-image: url("./images/herobg.png");
-	background-position: -300px;
+	background-position: -400px -600px;
 	background-repeat: no-repeat;
 }
 
@@ -152,7 +153,6 @@ p {
 	width: 100%;
 	min-height: 85vh;
 	padding: 16px;
-	margin-top: 32px;
 	display: grid;
 	position: relative;
 }
@@ -160,6 +160,7 @@ p {
 	display: flex;
 	gap: 20px;
 	justify-content: center;
+	margin-top: 32px;
 }
 .hero__bar {
 	background-color: var(--purple);
@@ -227,7 +228,7 @@ p {
 	justify-content: center;
 	padding: 5px 0;
 	margin: 20px 20px;
-	border: 3px solid var(--text-color-primary);
+	border: 4px solid var(--text-color-primary);
 	border-radius: 30px;
 }
 .hero__scroll span {
@@ -237,4 +238,50 @@ p {
 	display: inline-block;
 	border-radius: 50%;
 	animation: up-and-down 2s infinite;
+}
+
+/* ----------------------------- Overview (About) ----------------------------- */
+
+.about {
+	margin-top: 75px;
+	padding: 0 20px;
+}
+
+.about__title {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.about__text {
+	line-height: 1.75rem;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.about__cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.about__cards-item {
+	background: linear-gradient(-90deg, #00cea8 1.9%, #bf61ff 97.5%);
+	width: 100%;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+	border-radius: 20px;
+	padding: 1px;
+}
+
+.about__cards-item > div {
+	background-color: var(--cards);
+	border-radius: 20px;
+
+	padding: 85px;
+}
+
+.about__cards-item img {
+	width: 80px;
 }

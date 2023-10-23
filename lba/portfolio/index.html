@@ -80,36 +80,43 @@
 					</a>
 				</div>
 			</div>
-			<section id="about">
-				<p>Introduction</p>
-				<h2>Overview</h2>
-				<p>
+			<span id="about"></span>
+			<section class="about">
+				<p class="about__intro">Introduction</p>
+				<h2 class="about__title">Overview</h2>
+				<p class="about__text">
 					I'm a junior web developer with a passion for building websites and
 					applications, with experience Next.js, JavaScript, TailwindCSS, SEO
 					and Design. I'm a quick learner and collaborate closely with clients
 					to create efficient, scalable and user-friendly solutions that solve
 					real-world problems. Let's work together to bring your ideas to life!
 				</p>
-				<div>
-					<article>
-						<img
-							src="./images/web.png"
-							alt="Artistical logo for web developer"
-						/>
-						<h3>Web Developer</h3>
-					</article>
-					<article>
-						<img src="./images/mobile.png" alt="Artistical logo for SEO" />
-						<h3>SEO</h3>
-					</article>
-					<article>
-						<img
-							src="./images/backend.png"
-							alt="Artistical logo for Designer"
-						/>
-						<h3>Designer</h3>
-					</article>
-				</div>
+				<ul class="about__cards">
+					<li class="about__cards-item">
+						<div>
+							<img
+								src="./images/web.png"
+								alt="Artistical logo for web developer"
+							/>
+							<div>Web Developer</div>
+						</div>
+					</li>
+					<li class="about__cards-item">
+						<div>
+							<img src="./images/mobile.png" alt="Artistical logo for SEO" />
+							<div>SEO</div>
+						</div>
+					</li>
+					<li class="about__cards-item">
+						<div>
+							<img
+								src="./images/backend.png"
+								alt="Artistical logo for Designer"
+							/>
+							<div>Designer</div>
+						</div>
+					</li>
+				</ul>
 			</section>
 			<section>
 				<p>What I have done so far</p>
@@ -191,61 +198,64 @@
 					<img src="./images/tech/figma.png" alt="Figma Logo" />
 				</div>
 			</section>
-			<section>
-				<p>My Work</p>
-				<h2>Projects.</h2>
-				<p>
+			<span id="work"></span>
+			<section class="work">
+				<p class="work__intro">My Work</p>
+				<h2 class="work__title">Projects.</h2>
+				<p class="work__text">
 					Following projects showcases my skills and experience through
 					real-world examples of my work. Each project is briefly described with
 					links to code repositories and live demos in it. It reflects my
 					ability to solve complex problems, work with different technologies,
 					and manage projects effectively.
 				</p>
-				<article>
-					<a href="https://www.sthetique-sophie.com/">
-						<img src="./images/internet.png" alt="Internet Logo" />
-					</a>
-					<img
-						src="./images/sthetique-site.png"
-						alt="Front Page of sthetique-sophie Website"
-					/>
-					<h3>S'thétique Sophie</h3>
-					<p>
-						Company website that allows users to see the latest news and updates
-						from the Sophie Beauty Saloon. Also they can see the prices for each
-						services
-					</p>
-					<ul>
-						<li>#React</li>
-						<li>#NextJS</li>
-						<li>TailwindCSS</li>
-					</ul>
-				</article>
-				<article>
-					<a href="https://blogr-landing-page-vanilla-ebon.vercel.app/">
-						<img src="./images/internet.png" alt="Internet Logo" />
-					</a>
-					<a
-						href="https://github.com/Risk0-Code/challenges/tree/master/frontendMentor/blogr-landing-page/vanilla"
-					>
-						<img src="./images/github.png" alt="Github Logo" />
-					</a>
-					<img
-						src="./images/blogr-landing-page.png"
-						alt="Front Page of Blogr Landing Page"
-					/>
-					<h3>Blogr Landing Page</h3>
-					<p>
-						This is a challenge from the frontend Mentor website, which give
-						challenges to chose from and to be the most accurate possible from
-						the design
-					</p>
-					<ul>
-						<li>#HTML5</li>
-						<li>#CSS3</li>
-						<li>#JavaScript</li>
-					</ul>
-				</article>
+				<div class="work__cards">
+					<article class="work__cards-item">
+						<a href="https://www.sthetique-sophie.com/">
+							<img src="./images/internet.png" alt="Internet Logo" />
+						</a>
+						<img
+							src="./images/sthetique-site.png"
+							alt="Front Page of sthetique-sophie Website"
+						/>
+						<h3>S'thétique Sophie</h3>
+						<p>
+							Company website that allows users to see the latest news and
+							updates from the Sophie Beauty Saloon. Also they can see the
+							prices for each services
+						</p>
+						<ul>
+							<li>#React</li>
+							<li>#NextJS</li>
+							<li>TailwindCSS</li>
+						</ul>
+					</article>
+					<article class="work__cards-item">
+						<a href="https://blogr-landing-page-vanilla-ebon.vercel.app/">
+							<img src="./images/internet.png" alt="Internet Logo" />
+						</a>
+						<a
+							href="https://github.com/Risk0-Code/challenges/tree/master/frontendMentor/blogr-landing-page/vanilla"
+						>
+							<img src="./images/github.png" alt="Github Logo" />
+						</a>
+						<img
+							src="./images/blogr-landing-page.png"
+							alt="Front Page of Blogr Landing Page"
+						/>
+						<h3>Blogr Landing Page</h3>
+						<p>
+							This is a challenge from the frontend Mentor website, which give
+							challenges to chose from and to be the most accurate possible from
+							the design
+						</p>
+						<ul>
+							<li>#HTML5</li>
+							<li>#CSS3</li>
+							<li>#JavaScript</li>
+						</ul>
+					</article>
+				</div>
 			</section>
 			<section>
 				<p>Get in Touch</p>
