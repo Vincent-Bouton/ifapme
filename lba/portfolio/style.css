@@ -27,6 +27,10 @@ body {
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+main {
+	background-color: var(--black);
+}
+
 h1 {
 	font-size: 2.5rem;
 	font-weight: bold;
@@ -514,4 +518,58 @@ p {
 }
 .javascript {
 	background: linear-gradient(to top, #e2c430 30%, #f7d724);
+}
+
+/* ----------------------------- Contact ----------------------------- */
+
+.contact {
+	margin: 75px auto 120px;
+	padding-bottom: 2rem;
+}
+
+.contact__container {
+	background-color: var(--cards);
+	border-radius: 20px;
+	max-width: 1080px;
+	padding: 1rem 1rem 2rem;
+	margin: auto;
+	width: 90%;
+}
+
+.contact__title {
+	margin-bottom: 1rem;
+}
+
+.contact__mail {
+	padding: 10px 0;
+	line-height: 20px;
+	text-decoration: none;
+	color: var(--purple);
+	transition: border 0.2s linear;
+}
+.contact__mail:hover {
+	opacity: 1;
+	border-bottom: 1px solid var(--purple);
+	transition: border 0.2s linear;
+}
+
+/* ----------------------------- Footer ----------------------------- */
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+	margin: 10px 0 0;
+	padding-top: 75px;
+	background-color: #2e204e;
+	padding: 1rem;
+	width: 100%;
+}
+
+.footer__title {
+	margin: 20px 0 10px;
+}
+
+.footer__text a {
+	color: var(--white);
 }
