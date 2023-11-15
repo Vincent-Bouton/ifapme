@@ -1,0 +1,12 @@
+main,
+aside {
+	height: 250px;
+}
+
+aside {
+	flex-grow: 1;
+}
+
+main {
+	flex-grow: 2;
+}
