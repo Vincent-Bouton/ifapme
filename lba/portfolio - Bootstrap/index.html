@@ -56,17 +56,33 @@
 					id="navbarsExample09"
 				>
 					<ul class="navbar-nav mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#about">About</a>
+						<li class="nav-item m-3">
+							<a
+								class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold"
+								href="#about"
+								>About</a
+							>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#experience">Experience</a>
+						<li class="nav-item m-3">
+							<a
+								class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold"
+								href="#experience"
+								>Experience</a
+							>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#work">Work</a>
+						<li class="nav-item m-3">
+							<a
+								class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold"
+								href="#work"
+								>Work</a
+							>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#contact">Contact</a>
+						<li class="nav-item m-3">
+							<a
+								class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold"
+								href="#contact"
+								>Contact</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -264,7 +280,7 @@
 					<article class="work__cards-item">
 						<div class="work__cards-links">
 							<a href="https://www.sthetique-sophie.com/">
-								<img src="./images/internet.png" alt="Internet Logo" />
+								<i class="iconoir-open-new-window text-white m-auto"></i>
 							</a>
 						</div>
 						<div class="work__cards-item-frontpage">
@@ -289,12 +305,12 @@
 					<article class="work__cards-item">
 						<div class="work__cards-links">
 							<a href="https://blogr-landing-page-vanilla-ebon.vercel.app/">
-								<img src="./images/internet.png" alt="Internet Logo" />
+								<i class="iconoir-open-new-window text-white m-auto"></i>
 							</a>
 							<a
 								href="https://github.com/Risk0-Code/challenges/tree/master/frontendMentor/blogr-landing-page/vanilla"
 							>
-								<img src="./images/github.png" alt="Github Logo" />
+								<i class="iconoir-github text-white m-auto"></i>
 							</a>
 						</div>
 						<div class="work__cards-item-frontpage">
@@ -322,17 +338,65 @@
 				<div class="contact__container">
 					<p class="contact__intro">Get in Touch</p>
 					<h2 class="contact__title">Contact.</h2>
-					<ul class="contact__list">
-						<li>
-							My Email Address :
-							<a
-								class="contact__mail"
-								href="mailto:vincent.bouton.dev@gmail.com"
-							>
-								vincent.bouton.dev@gmail.com
-							</a>
-						</li>
-					</ul>
+					<form>
+						<div class="mb-3">
+							<label for="name" class="form-label">Your Name</label>
+							<input
+								type="text"
+								class="form-control text-white"
+								id="name"
+								placeholder="What's your name ?"
+								style="
+									resize: none;
+									background-color: #ffffff04;
+									border: none;
+									outline: none;
+								"
+							/>
+						</div>
+						<div class="mb-3">
+							<label for="email" class="form-label">Your Email</label>
+							<input
+								type="email"
+								class="form-control text-white"
+								id="email"
+								placeholder="What's your Email ?"
+								aria-describedby="emailHelp"
+								style="
+									resize: none;
+									background-color: #ffffff04;
+									border: none;
+									outline: none;
+								"
+							/>
+							<div id="emailHelp" class="form-text text-white">
+								We'll never share your email with anyone else.
+							</div>
+						</div>
+						<div class="mb-3">
+							<label for="message" class="form-label">Your Message</label>
+							<textarea
+								type="text"
+								class="form-control text-white"
+								id="message"
+								rows="7"
+								placeholder="What's your message ?"
+								style="
+									resize: none;
+									background-color: #ffffff04;
+									border: none;
+									outline: none;
+								"
+							></textarea>
+						</div>
+						<button
+							type="submit"
+							class="btn btn-primary"
+							style="background-color: var(--purple); border: none"
+						>
+							Submit
+						</button>
+					</form>
 				</div>
 			</section>
 			<footer class="footer">

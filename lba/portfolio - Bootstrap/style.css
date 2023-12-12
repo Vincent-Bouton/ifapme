@@ -668,3 +668,7 @@ p {
 .footer__text a {
 	color: var(--white);
 }
+
+.form-control::placeholder {
+	color: #ffffff80;
+}
