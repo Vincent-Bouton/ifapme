@@ -1,0 +1,10 @@
+:root {
+	--dark-blue: #1c4396;
+	--light-blue: #ebf5fe;
+}
+header {
+	background-color: var(--dark-blue);
+}
+.hero {
+	background-color: var(--dark-blue);
+}
