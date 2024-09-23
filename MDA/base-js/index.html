@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Base-js</title>
+	<style>
+		img {
+			display: none;
+		}
+		.show {
+			display: block;
+		}
+		.themeSwitcher {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		}
+		.theme {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 0 10px;
+			cursor: pointer;
+		}
+		#dark {
+			background-color: #333;
+		}
+		#yellow {
+			background-color: yellow;
+		}
+		#green {
+			background-color: green;
+		}
+		.dark {
+			background-color: #333;
+			color: white;
+		}
+		.yellow {
+			background-color: yellow;
+		}
+		.green {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<button id="btn">Appuyez!</button>
+		<img src="https://picsum.photos/200" alt="" id="img">
+	</div>
+
+	<div class="themeSwitcher">
+		<div class="theme" id="dark"></div>
+		<div class="theme" id="yellow"></div>
+		<div class="theme" id="green"></div>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>
